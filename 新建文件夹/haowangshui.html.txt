@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>好望水新春H5互动活动</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <!-- 首页：选择种子 -->
+    <div id="choose-seed" class="page">
+      <h1>选择你的种子</h1>
+      <div class="seeds">
+        <button class="seed" data-seed="hawthorn">山楂</button>
+        <button class="seed" data-seed="lemon">柠檬</button>
+        <button class="seed" data-seed="myrtle">杨梅</button>
+        <button class="seed" data-seed="apricot">杏子</button>
+      </div>
+    </div>
+    
+    <!-- 第二页：云种树 -->
+    <div id="plant-seed" class="page hidden">
+      <h1>开始种植你的树苗</h1>
+      <div class="planting-scene">
+        <!-- 动画或图片展示种植场景 -->
+        <div class="tree"></div>
+      </div>
+      <button id="plant-seed-btn">种下种子</button>
+    </div>
+    
+    <!-- 第三页：摘果实 -->
+    <div id="harvest-fruit" class="page hidden">
+      <h1>摘取你的果实</h1>
+      <div class="fruit-tree">
+        <!-- 可互动的果实 -->
+      </div>
+      <button id="harvest-btn">摘果实</button>
+    </div>
+    
+    <!-- 品牌故事 -->
+    <div id="brand-story" class="page hidden">
+      <h1>了解好望水品牌故事</h1>
+      <p>这是品牌故事...</p>
+      <button id="next-page">下一页</button>
+    </div>
+    
+    <!-- 抽奖互动 -->
+    <div id="lottery" class="page hidden">
+      <h1>抽奖时间</h1>
+      <button id="draw-btn">抽奖</button>
+      <p id="lottery-result"></p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
